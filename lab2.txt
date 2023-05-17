@@ -1,0 +1,59 @@
+public class Animal {
+    protected String name;
+    
+  public Animal(String name) {
+      this.name = name;
+  }
+  
+  public void sound () {
+      
+  }
+}
+  class Dog extends Animal {
+      public Dog(String name){
+          super(name);
+  }
+ 
+      public void sound(){
+          System.out.println("Doog:Woof!");
+      }
+  }
+class Cat extends Animal {
+      public Cat (String name){
+          super(name);
+  }
+ 
+      public void sound(){
+          System.out.println("Cat:Meow!");
+      }
+  }
+ class Cow extends Animal {
+      public Cow(String name){
+          super(name);
+  }
+ 
+    
+      public void sound(){
+          System.out.println("Cow:Moo!");
+      }
+  }
+
+
+
+
+package Animaal;
+
+/**
+ *
+ * @author vdi-terminal
+ */
+public class main1 {
+    public static void main1(String[] args) {
+        Dog dog = new Dog ("Kuzija");
+        dog.sound();
+        Cat cat = new Cat ("Milodu");
+        cat.sound();
+        Cow cow = new Cow ("Bezzy");
+        cow.sound();
+    }
+}
